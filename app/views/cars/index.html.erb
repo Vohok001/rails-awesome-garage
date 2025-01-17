@@ -1,0 +1,24 @@
+
+<div class="car-container">
+  <% @cars.each do |car| %>
+    <div class="car-card">
+
+      <div class="car-info">
+        <%= link_to car.brand,car_path(car) %>
+        <%= car.model %>
+      </div>
+
+      <div class="car-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "#{car.image_url}"%>')">
+      </div>
+
+      <div class="user_id">
+        <p><%= car.owner.nickname %></p>
+      </div>
+
+      <div class="comment">
+        <p> <i class="fa-regular fa-comment"></i>   Comment</p>
+      </div>
+
+    </div>
+  <% end %>
+</div>

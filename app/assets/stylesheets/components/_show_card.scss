@@ -1,0 +1,43 @@
+.show-container{
+  width:  900px;
+  margin: auto;
+  margin-top: 100px;
+  align-items: center;
+  overflow: hidden;
+}
+.show-card{
+  width: 800px;
+  background-color: white;
+  margin-bottom: 100px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.fav-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  p{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+  }
+}
+.car-info-show{
+  display: flex;
+  flex-direction: column;
+  font-family: "montserrat", serif;
+  h1 {
+    color: crimson;
+    font-weight: bold;
+  }
+}
+.review-form{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.reviews{
+  padding: 20px;
+  line-height: 10px;
+}

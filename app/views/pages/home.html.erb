@@ -1,0 +1,11 @@
+<div class="video-container">
+  <video autoplay muted loop id="bg-video">
+    <source src="<%= asset_path 'cars-bg-video.mp4' %>" type="video/mp4">
+  </video>
+
+  <div class=" overlay-content">
+    <h1>Welcome to Awes⚙️me Garage</h1>
+    <p>Your one-stop solution for managing your favorite cars.</p>
+    <%= link_to "Explore Cars", cars_path, class: "btn" %>
+  </div>
+</div>

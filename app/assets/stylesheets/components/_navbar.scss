@@ -1,12 +1,37 @@
-.navbar-lewagon {
+.navbar {
+  background: black;
+  display: flex;
   justify-content: space-between;
-  background: white;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+  padding: 0px 20px 0px 5px;
+  img {
+    width: 60px;
+    margin: 5px 30px 10px 0px;
+  }
+  .logo{
+    a{
+      color: white;
+    }
+  }
+  .navbar-tags{
+    a {
+      color: #C0C0C0;
+      margin-left: 20px;
+      &:hover{
+        font-size: 20px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+        0 0 20px rgba(255, 255, 255, 0.4),
+        0 0 30px rgba(0, 123, 255, 0.6),
+        0 0 40px rgba(0, 123, 255, 0.5);
+      }
+    }
+  }
+  h1{
+    color: white;
+    font-family: "Oswald", serif;
+    padding-top: 5px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.4),
+    0 0 30px rgba(0, 123, 255, 0.3),
+    0 0 40px rgba(0, 123, 255, 0.2);
+  }
 }

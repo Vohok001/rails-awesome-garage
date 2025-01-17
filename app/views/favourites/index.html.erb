@@ -1,0 +1,25 @@
+<div class="fav-container">
+  <h1>My Garage</h1>
+
+
+    <% @favourites.each do |favourite| %>
+      <div class="fav-card">
+        <div class="fav-img"
+          style="background-image: url('<%= image_path "#{favourite.car.image_url}"%>')">
+        </div>
+        <div class= "fav-info">
+          <h3><%= link_to favourite.car.brand, car_path(favourite.car) %>  |
+            <%= link_to favourite_path(favourite),
+            data: { turbo_method: :delete,
+            turbo_confirm: "Are you sure you want to remove from your list"},
+            class: 'btn-delete' do %>
+              <i class="fa-solid fa-trash"></i>
+            <% end%></h3>
+          <h4><%= favourite.car.model %></h4>
+          <p><%= favourite.car.year  %> | <%= favourite.car.fuel %></p>
+        </div>
+      </div>
+    <% end %>
+
+
+</div>

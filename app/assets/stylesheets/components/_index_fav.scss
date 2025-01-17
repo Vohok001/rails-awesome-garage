@@ -1,0 +1,61 @@
+.fav-container{
+  width:  900px;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 40px;
+  align-items: center;
+  overflow: auto;
+  h1{
+    color: crimson;
+    font-weight: bold;
+    font-family:"montserrat", serif;
+  }
+}
+.fav-card{
+  width: 800px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  position: relative;
+}
+.fav-img{
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.fav-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "montserrat", serif;
+  width: 200px;
+  padding: 10px;
+  h4{
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  p{
+    color: grey;
+  }
+  h3{
+    a{
+      color: red;
+      font-weight: bold;
+      &:hover{
+        color: grey;
+      }
+    }
+    }
+  }
+.fa-trash{
+  color:grey;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      &:hover {
+        color: red;
+}
+}
